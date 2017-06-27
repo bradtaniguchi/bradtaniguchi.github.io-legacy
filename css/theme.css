@@ -1,0 +1,20 @@
+/*Brads theme!*/
+
+/*Hover item*/
+.highlight:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+/*CLickable*/
+.clickable {
+  cursor: pointer;
+}
+/*wrapper for the avatar icon*/
+.avatar-wrapper {
+  width: 200px;
+}
+
+.grey {
+  color: grey;
+}

@@ -1,0 +1,25 @@
+<md-dialog aria-label="Report Bug" flex="80">
+  <form ng-cloak ng-submit="vm.submit(vm.message)">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Report Bug</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="vm.close()">
+          <md-icon aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content layout-padding>
+      Still in progress!
+      Sorry you can't report bugs yet!
+    </md-dialog-content>
+    <md-dialog-actions layout="row" layout-align="end center">
+      <md-button class="md-raised" ng-click="vm.close()">
+        Cancel
+      </md-button>
+      <md-button type="submit" class="md-raised md-primary" >
+        Submit
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

@@ -1,0 +1,27 @@
+<!--sidenav-->
+<div ng-include="'app/views/main/sidenav.html'">
+</div>
+
+<!--start page content-->
+<div layout-fill md-scroll-shrink>
+  <md-toolbar>
+    <div class="md-toolbar-tools" layout="row">
+      <md-button class="md-icon-button" ng-click="vm.toggleNav()" aria-label="Open Navigation">
+        <md-icon class="material-icons">menu</md-icon>
+      </md-button>
+      <h2 md-truncate class="md-title highlight" ui-sref="about">Github Page : Brad Taniguchi</h2>
+      <span flex></span>
+      <div>
+        <md-button class="md-icon-button" aria-label="Go to Github Profile"
+        ng-click="vm.redirectToPage($event)">
+          <md-icon class="material-icons">exit_to_app</md-icon>
+          <md-tooltip md-direction="down">Github Profile</md-tooltip>
+        </md-button>
+      </div>
+    </div>
+  </md-toolbar>
+  <md-progress-linear ng-show="loading"></md-progress-linear>
+  <md-content>
+    <ui-view></ui-view>
+  </md-content>
+</div>

@@ -1,0 +1,54 @@
+<div>
+  <md-card>
+    <md-card-content layout="row" layout-wrap>
+      <div flex-xs="100" flex-gt-xs="30">
+        <img class="md-user-avatar avatar-wrapper" 
+          src="https://avatars0.githubusercontent.com/u/10079147?v=3&s=460"/>
+      </div>
+      <div flex="50">
+        <div class="md-headline">
+        Brad
+        </div>
+        <div class="md-subhead">
+          bradtaniguchi
+        </div>
+        <md-divider></md-divider>
+        <div class="md-body-1">
+          <span class="md-body-2">A young and inspired open-source developer.
+          Always trying to learn new things.</span>
+          <div>
+            I am currently learning front-end web development, and have experience with java, Python, C and C#.
+            My github page is built using Angularjs and Angular-material. The code can be found
+            <span href="https://github.com/bradtaniguchi/bradtaniguchi.github.io">here.</span>
+          </div>
+        </div>
+      </div>
+    </md-card-content>
+  </md-card>
+  <div layout="row">
+    <md-card flex-xs="100" flex-gt-xs="50">
+      <md-card-content layout="column" layout-align="center center">
+        <div class="md-body-2">
+          Report bugs for any of my applications below.
+        </div>
+        <div>
+          <md-button class="md-raised" ng-click="vm.report($event)">
+            Report Bug
+          </md-button>
+        </div>
+      </md-card-content>
+    </md-card>
+    <md-card flex-xs="100" flex-gt-xs="50">
+      <md-card-content layout="column" layout-align="center center">
+        <div class="md-body-2">
+          Play games!
+        </div>
+        <div>
+          <md-button class="md-raised" ui-sref="games">
+            Games
+          </md-button>
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
